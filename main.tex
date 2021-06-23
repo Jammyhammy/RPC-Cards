@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{memoir}
+\documentclass[12pt,a4paper]{memoir}
 
 \setstocksize{55mm}{85mm} % UK Stock size
 \setpagecc{55mm}{85mm}{*}
@@ -22,41 +22,43 @@
 \begin{document}
     \begin{Spacing}{0.75}%
     \noindent
-    \textbf{Adil Khokhar}\\
+    \textbf{Name}\\
     \rule{74mm}{.3mm}\\
-    \begin{minipage}[t]{33mm}
+    \begin{minipage}[t]{30mm}
         \vspace{-0mm}%
         \begin{pspicture}(25mm,25mm)
             % The MECARD format is used to exchange contact information. More information at:
             % http://www.nttdocomo.co.jp/english/service/imode/make/content/barcode/function/application/addressbook/index.html
-\psbarcode{MECARD:N:Last name, First Name;URL:https://fqdn;EMAIL:helena@univ.edu;NOTE:GPG: ;;}{eclevel=L width=1 height=1}{qrcode}
+\psbarcode{MECARD:N:First Last;URL:https://fgda/;EMAIL:myemail@my_school.edu;NOTE:RPC: ;;}{eclevel=L width=1 height=1}{qrcode}
 
         \end{pspicture}
     \end{minipage}
     \hspace{1mm}
-    \begin{minipage}[t]{42mm}
+    \begin{minipage}[t]{41mm}
         \vspace{-0mm}%
         \begin{flushleft}
         {\scriptsize
             \begin{Spacing}{1}%
-            \textbf{Job Title}\\
-            \hspace{5mm}Speciality 1\\
-            \hspace{5mm}Speciality 2\\
-            \hspace{5mm}Speciality 3 \vspace{2mm}\\
+            \textbf{Lead Contact}\\
+            \hspace{5mm}First Last\\
             \end{Spacing}
         }
-        {\tiny
+        {\scriptsize
+            \begin{Spacing}{1}%
+            \textbf{Contact Information}\\
+            \end{Spacing}
+        }        
+        {\scriptsize
         	\begin{tabular}{rl}
-            	{\color{gray}web} & https://fqdn/\\
-            	{\color{gray}email} & helena@univ.edu\\
-            	{\color{gray}email} & hxr42@gmail.com\\
-            	{\color{gray}mobile} & +1 123 456 7890\\
+            	{\color{gray}email} & my_ulid@my_school.edu\\
+            	{\color{gray}email} & my_alias@my_school.edu\\
+            	{\color{gray}mobile} & +1 337 999 9999\\
             \end{tabular}
-            \vspace*{2mm}
-        }
+            \vspace*{8mm}
+        }   
         \end{flushleft}
     \end{minipage}
     \rule{74mm}{0mm}\\
-    \texttt{\fontsize{2.84mm}{3.55mm}\selectfont 425B 030A B8D2 0316 CA1B 4709 CA83 5DDA EC31 CA56} % GPG KEY ID
+    \texttt{\fontsize{2.44mm}{3.15mm}\selectfont The QR code will add the contact info to your device.} % GPG KEY ID
     \end{Spacing}
 \end{document}
